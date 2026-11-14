@@ -1,0 +1,61 @@
+/* --- نوار منوی اصلی بالا --- */
+.menu-bar {
+    height: 30px;
+    background-color: var(--bg-header);
+    flex-direction: row;
+    align-items: center;
+    padding-left: 4px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-color);
+}
+
+.menu-item-container {
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: var(--text-main);
+    border-width: 0;
+    font-size: 11px;
+    padding: 4px 12px;
+    height: 30px;
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ساب‌منوهای آبشاری شناور */
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 160px;
+    background-color: var(--bg-panel);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 3px;
+    padding: 4px 0;
+    z-index: 9999;
+}
+
+.dropdown-hidden {
+    display: none;
+}
+
+.dropdown-item {
+    background-color: transparent;
+    color: var(--text-main);
+    border-width: 0;
+    font-size: 11px;
+    padding: 6px 12px;
+    -unity-text-align: middle-left;
+    height: 26px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}

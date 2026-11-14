@@ -1,0 +1,130 @@
+:root {
+    --bg-main: #181818;
+    --bg-panel: #222222;
+    --bg-header: #2d2d2d;
+    --text-main: #d4d4d4;
+    --text-dimmed: #858585;
+    --border-color: #333333;
+    --accent-color: #007acc;
+    --close-btn-hover: #e81123;
+}
+
+.light-theme {
+    --bg-main: #f3f3f3;
+    --bg-panel: #ffffff;
+    --bg-header: #e1e1e1;
+    --text-main: #333333;
+    --text-dimmed: #666666;
+    --border-color: #d4d4d4;
+    --accent-color: #0066cc;
+    --close-btn-hover: #e81123;
+}
+
+.root-container {
+    flex-grow: 1;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.top-toolbar {
+    height: 32px;
+    background-color: var(--bg-header);
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-color);
+}
+
+.spawn-btn {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border-width: 0;
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 4px 10px;
+    margin-right: 8px;
+}
+
+.theme-btn {
+    background-color: var(--bg-panel);
+    color: var(--text-main);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 3px 10px;
+}
+
+.workspace {
+    flex-grow: 1;
+    flex-direction: row;
+    position: relative;
+}
+
+.floating-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.dock-panel {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: var(--bg-panel);
+    border-width: 1px;
+    border-color: var(--border-color);
+    border-radius: 4px;
+    flex-direction: column;
+    pointer-events: auto;
+}
+
+.panel-header {
+    height: 28px;
+    background-color: var(--bg-header);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 4px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-color);
+}
+
+.panel-title {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: var(--text-main);
+}
+
+.panel-close-btn {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-width: 0;
+    color: var(--text-dimmed);
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.panel-close-btn:hover {
+    background-color: var(--close-btn-hover);
+    color: #ffffff;
+}
+
+.panel-body {
+    flex-grow: 1;
+    background-color: var(--bg-panel);
+    padding: 8px;
+}
+
+.placeholder-label {
+    color: var(--text-dimmed);
+    font-size: 12px;
+}

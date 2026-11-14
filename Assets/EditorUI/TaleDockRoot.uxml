@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <Style src="TaleTheme.uss" />
+    <Style src="TaleMenuWidget.uss" />
+    
+    <ui:VisualElement name="root-element" class="root-container">
+        
+        <!-- منوی بالا -->
+        <ui:VisualElement name="menu-bar-root" class="menu-bar">
+            <ui:VisualElement class="menu-item-container">
+                <ui:Button name="menu-file" text="File" class="menu-btn" />
+                <ui:VisualElement name="dropdown-file" class="dropdown-menu dropdown-hidden">
+                    <ui:Button text="New Panel" class="dropdown-item" />
+                    <ui:Button text="Open Project..." class="dropdown-item" />
+                    <ui:Button text="Exit" class="dropdown-item" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="menu-item-container">
+                <ui:Button name="menu-edit" text="Edit" class="menu-btn" />
+                <ui:VisualElement name="dropdown-edit" class="dropdown-menu dropdown-hidden">
+                    <ui:Button text="Undo" class="dropdown-item" />
+                    <ui:Button text="Redo" class="dropdown-item" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="menu-item-container">
+                <ui:Button name="menu-view" text="View" class="menu-btn" />
+                <ui:VisualElement name="dropdown-view" class="dropdown-menu dropdown-hidden">
+                    <ui:Button text="Toggle Theme" class="dropdown-item" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="menu-item-container">
+                <ui:Button name="menu-help" text="Help" class="menu-btn" />
+                <ui:VisualElement name="dropdown-help" class="dropdown-menu dropdown-hidden">
+                    <ui:Button text="About TaleForger" class="dropdown-item" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- نوار ابزار -->
+        <ui:VisualElement class="top-toolbar">
+            <ui:Button name="btn-spawn-panel" text="+ New Floating Panel" class="spawn-btn" />
+            <ui:Button name="btn-toggle-theme" text="Switch Theme (Dark / Light)" class="theme-btn" />
+        </ui:VisualElement>
+
+        <!-- فضای کاری -->
+        <ui:VisualElement class="workspace">
+            <ui:VisualElement name="floating-layer" class="floating-layer" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
